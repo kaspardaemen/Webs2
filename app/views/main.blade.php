@@ -39,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="home">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,7 +54,7 @@
                         <a href="#">Contact</a>
                     </li>
                      <li>
-                        <a href="#" class="button" id="toggle-login">Login</a>
+                        <a href="login" class="button" id="toggle-login">Login</a>
                      </li>
                 </ul>
             </div>
@@ -63,10 +63,19 @@
         <!-- /.container -->
     </nav>
 
-
-
-    <div id="login">hallo</div>
-    <!-- Page Content -->
+    <!-- Login -->
+    @if($page == 'login')
+   <div class="login">
+   	<h1>Login</h1>
+       <form method="post">
+       	<input type="text" name="u" placeholder="Username" required="required" />
+           <input type="password" name="p" placeholder="Password" required="required" />
+           <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+       </form>
+   </div>
+    @endif
+    <!-- Home content -->
+    @if($page == 'home')
     <div class="container">
 
         <div class="row">
@@ -149,7 +158,7 @@
 
     </div>
     <!-- /.container -->
-
+    @endif
     <div class="container">
 
         <hr>

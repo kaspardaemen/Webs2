@@ -2,9 +2,9 @@
 
 Route::get('/', 'MainController@index');
 
-Route::get('home', 'HomeController@index');
+Route::get('home', 'MainController@index');
 
-Route::get('login', 'HomeController@login');
+Route::get('login', 'MainController@login');
 
 
 Route::controllers([
