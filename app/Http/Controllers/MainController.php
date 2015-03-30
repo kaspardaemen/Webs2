@@ -33,16 +33,18 @@ class MainController extends Controller {
     * NAVIGATIONS FUNCTIONS
     */
     public function login(){
-        $this->navigate('login');   
+        $this->navigate('login');
+        return view('main', $this->navigate('login'));
     }
     public function home(){
         $this->navigate('home');
+        return view('main', $this->navigate('login'));
     }
 
     public function navigate($page){
         $this->page = $page;
-        $data = ['page' => $this->page];
-        return view('main', $data );
+        return  $data = ['page' => $this->page];
+
     }
 
     /*
