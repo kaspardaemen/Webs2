@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'webshop2'),
-			'username'  => env('DB_USERNAME', 'root'),
-			'password'  => env('DB_PASSWORD', ''),
+			'host'      => env('DB_HOST', 'databases.aii.avans.nl'),
+			'database'  => env('DB_DATABASE', 'lmadaame_db2'),
+			'username'  => env('DB_USERNAME', 'lmadaame'),
+			'password'  => env('DB_PASSWORD', 'Ab12345'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
