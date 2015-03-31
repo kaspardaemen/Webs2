@@ -17,6 +17,7 @@ class MainController extends Controller {
     public function __construct()
     {
         $this->page = 'home';
+        $this->middleware('auth');
     }
 
 
