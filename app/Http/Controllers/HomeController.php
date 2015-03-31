@@ -1,17 +1,9 @@
 <?php namespace App\Http\Controllers;
 
-class HomeController extends Controller {
+use App\Models\Product;
 
-	/*
-	|--------------------------------------------------------------------------
-	| Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| This controller renders your application's "dashboard" for users that
-	| are authenticated. Of course, you are free to change or remove the
-	| controller as you wish. It is just here to get your app started!
-	|
-	*/
+class HomeController extends Controller 
+{
 
 	/**
 	 * Create a new controller instance.
@@ -30,12 +22,24 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+            //$data = ['products' => $this->isFeatured()]; 
+
+            //return view('home', $data);
 	}
         
         public function home()
         {
-            return view('home');
+           $data = ['products' => $this->isFeatured()]; 
+
+            return view('home', $data);
+        }
+        
+        /*
+        * DB FUNCTIONS
+        */
+        function isFeatured(){
+            $result =  Product::Where('isfeatured','=', '1')->get();
+            return $result;
         }
 
 }
