@@ -20,7 +20,7 @@ class MenuController extends Controller {
 	 */
 	public function __construct()
 	{
-		//$this->middleware('guest');
+            $this->middleware('guest');
 	}
 
 	/**
@@ -34,7 +34,7 @@ class MenuController extends Controller {
 	}
         
         public function home()
-        {
+        {       
             return view('home');
         }
         
@@ -44,13 +44,15 @@ class MenuController extends Controller {
         }
         
         public function services()
-        {
-            return view('services');
+        {            
+            return view('services');            
         }
         
         public function contact()
-        {
+        {            
             return view('contact');
         }
+        
+     
 
 }

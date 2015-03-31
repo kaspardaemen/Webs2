@@ -10,7 +10,5 @@ class Product extends Model {
 
     protected $table = 'product';
 
-    public static function featured(){
-        return  DB::table('product')->where('isfeatured','=','1')->get();
-    }
+    
 }
