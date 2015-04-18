@@ -24,7 +24,7 @@
 	}
 	
 	# SETUP DB
-	$db = new Database($settings);
+	$db = new Database($config);
 	
 	# PARSE URL
 	$url = new Url();
