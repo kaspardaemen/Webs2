@@ -30,6 +30,7 @@ ini_set('display_errors', '1');
 	$settings["db_host"] = "databases.aii.avans.nl";
 	$settings["db_port"] = "3306";
 
+        
 	# Path
 	$settings["path"] = "/WS2_Eindopdracht";
 
