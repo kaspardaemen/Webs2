@@ -6,7 +6,7 @@ Route::get('home', 'MainController@index');
 
 Route::get('login', 'MainController@login');
 
-
+Route::get('admin', 'AdminController@index');
 /*
 | Nog niet ingelogde groep
  */

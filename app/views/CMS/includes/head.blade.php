@@ -3,11 +3,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CMS De Bunders</title> 
 <!-- BOOTSTRAP STYLES-->
-<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<link href="{{asset('/css/bootstrap.css')}}" rel="stylesheet" />
 <!-- FONTAWESOME ICONS STYLES-->
-<link href="assets/css/font-awesome.css" rel="stylesheet" />
+<link href="{{asset('/css/font-awesome.css')}}" rel="stylesheet" />
 <!--CUSTOM STYLES-->
-<link href="assets/css/style.css" rel="stylesheet" />
+<link href="{{asset('/css/style.css')}}" rel="stylesheet" />
 <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
